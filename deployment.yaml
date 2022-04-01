@@ -59,15 +59,15 @@ spec:
         - containerPort: 5000
         env:
         - name: MONGODB_DB
-          value: admin
+          value: "admin"
         - name: MONGODB_HOST
-          value: mongodb
+          value: "mongodb"
         - name: MONGODB_PORT
           value: "27017"
         - name: MONGODB_USERNAME
-          value: mongouser
+          value: "mongouser"
         - name: MONGODB_PASSWORD
-          value: mongopwd
+          value: "mongopwd"
 ---
 apiVersion: v1
 kind: Service
