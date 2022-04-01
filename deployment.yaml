@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
       - name: rotten-potatoes
-        image: felipesilva/rotten-potatoes:latest
+        image: felipedias/rotten-potatoes:V0.1
         ports:
         - containerPort: 5000
         env:
