@@ -2,12 +2,14 @@
 
 ## Configuração
 
-MONGODB_DB => Nome do database
+Utilizar o comando abaixo para criar o cluster:
 
-MONGODB_HOST => Host do MongoDB
+`k3d cluster create kubedev-cluster --servers 3 --agents 3 -p "8080:30000@loadbalancer"`
 
-MONGODB_PORT => Posta de acesso ao MongoDB
+Com o cluster criado execute o comando abaixo para fazer o deploy no cluster:
 
-MONGODB_USERNAME => Usuário do MongoDB
+`kubectl apply -f deployment.yaml`
 
-MONGODB_PASSWORD => Senha do MongoDB
+A imagem utilizada para fazer o deploy se encontra no registry.
+
+https://hub.docker.com/repository/docker/felipedias/rotten-potatoes
